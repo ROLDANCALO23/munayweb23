@@ -1,0 +1,33 @@
+@import 'variables';
+
+.crossCursor{
+    cursor: url('img/crosshair.png'), auto !important;
+    z-index: 2;
+}
+.cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    background: white;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.cursor-follow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: 1px solid white;
+    z-index: 99;
+    pointer-events: none;
+
+}

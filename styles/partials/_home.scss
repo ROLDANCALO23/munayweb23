@@ -1,0 +1,23 @@
+@import 'variables';
+
+.home{
+    margin-top: 90px;
+    padding: 30px 15px;
+}
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .section--title-home{
+        font-size: 2rem;
+        text-align: center;
+        color:$quaternary-color;
+    }
+
+}
+
+.hero-carousel{
+    width: 100%;
+    max-width: max-content;
+}

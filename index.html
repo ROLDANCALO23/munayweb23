@@ -1,1 +1,352 @@
-<div>Hola</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== IMPORT GSAP ===============-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+  <!--=============== IMPORT icons ===============-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/font/MaterialIcons-Regular.ttf">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!--=============== JS ===============-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/texto.js" defer></script>
+  <script src="js/cards.js" defer></script>
+  <title>PAGINA DEMO</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id='header'>
+    <div class="nav--elements">
+      <a href="index.html" class="nav-logo">
+        <img src="img/logo.png" alt="" class="nav-logo-img" />
+      </a>
+      <div href="" class="nav--menu-mobile burger">
+        <img src="img/menu.png" alt="" class="burguer-icon" />
+      </div>
+    </div>
+    <div class="nav--menu" id='nav-menu'>
+      <a href="index.html" class="logo--mobile">
+        <img src="" alt="" class="logo-mobile-img" />
+      </a>
+      <nav class="nav">
+        <ul class="nav--list">
+          <li class="nav-item">
+            <a href="#us" class="nav--link active-link">NOSOTROS</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#services" class="nav--link active-link">SERVICIOS</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#briefcase" class="nav--link active-link">PORTAFOLIO</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#writetous" class="nav--link active-link">ESCRIBENOS</a>
+          </li>
+
+        </ul>
+      </nav>
+      <div class="nav--close" id='nav-close'>
+        <i class="ri-close-circle-line"></i>
+      </div>
+    </div>
+  </header>
+  <!--==================== MAIN ====================-->
+  <main>
+    <section class="hero-carousel">
+      <!-- carousel -->
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <div class="item">
+            <img src="img/img1.jpg">
+            <div class="content">
+              <div class="author">LUNDEV</div>
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">WEB</div>
+              <div class="des">
+                <!-- lorem 50 -->
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
+                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
+                exercitationem eum aperiam illo illum laudantium?
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img2.jpg">
+            <div class="content">
+              <div class="author">LUNDEV</div>
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">WEB</div>
+              <div class="des">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
+                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
+                exercitationem eum aperiam illo illum laudantium?
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img3.jpg">
+            <div class="content">
+              <div class="author">LUNDEV</div>
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">WEB</div>
+              <div class="des">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
+                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
+                exercitationem eum aperiam illo illum laudantium?
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img4.jpg">
+            <div class="content">
+              <div class="author">DISEÑO WEB</div>
+              <div class="title">DESIGN SLIDER</div>
+              <div class="topic">WEB</div>
+              <div class="des">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
+                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
+                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
+                exercitationem eum aperiam illo illum laudantium?
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <div class="item">
+            <img src="img/img1.jpg">
+            <div class="content">
+              <div class="title">
+                Name Slider
+              </div>
+              <div class="description">
+                Description
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img2.jpg">
+            <div class="content">
+              <div class="title">
+                Name Slider
+              </div>
+              <div class="description">
+                Description
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img3.jpg">
+            <div class="content">
+              <div class="title">
+                Name Slider
+              </div>
+              <div class="description">
+                Description
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img4.jpg">
+            <div class="content">
+              <div class="title">
+                Name Slider
+              </div>
+              <div class="description">
+                Description
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+          <button id="prev">
+            < </button>
+              <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+      </div>
+
+
+    </section>
+
+
+    <!--==================== HOME ====================
+    <section class=" section__container header__container" id="home">
+      <div class="home__content">
+        <h1>Agencia Digital</h1>
+        <div class='console-underscore' id='console'> &#95;</div>
+
+        <p class='pr'>
+          Enfocada en el logro de resultados comerciales y
+          de marketing con altas dosis de creatividad y estrategia.
+        </p>
+        <button class="cn"><a href="#">Contactanos</a></button>
+        <div class="form">
+          <h2>Dejanos tus datos</h2>
+          <input type="email" name='email' placeholder="Tu numero de wtsp o llamadas">
+          <input type="email" name='email' placeholder="Tu email activo">
+
+          <button class="btnn"><a href="#">ENVIAR</a></button>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+-->
+    <!--==================== Nosotros ====================
+    <section class="us--section" id="us">
+      <div class="us">
+        <span class="section--title-us">Nosotros</span>
+        <br>
+        <div class='section-boton-us'>Curiosidad,Creatividad y estrategia</div>
+      </div>
+      <span class="section--spam-us">Marketeros, creativos, diseñadores,
+        desarrolladores, comunicadores, administradores e ingenieros.
+        Somos un equipo que lleva la creatividad y estrategia a todo lo que hace.
+        Entendemos las necesidades de nuestros clientes para ofrecerles soluciones
+        que respondan a sus objetivos comerciales y de marketing.
+      </span>
+      <div class="">
+        <img src="" class="w3-left w3-circle">
+      </div>
+
+    </section>
+    <div class="ruleta-de-programas">
+
+    </div>
+  -->
+    <!--==================== servicios ====================-->
+
+    <section class="servicios" id=" ">
+      <span class="section--title-home">Servicios</span>
+      <div class="servicios--cards">
+        <div class="servicios--card-item item1">
+          <header class="card--tittle">
+            <h3>Titulo 1</h3>
+          </header>
+          <div class="card-content">
+            <span>1 new friend request</span>
+            <img src="" class="card--img">
+            <p>President/CEO at Mighty Schools...</p>
+          </div>
+
+          <button class="card--button">+ Connect</button>
+
+        </div>
+        <div class="servicios--card-item item2">
+          <header class="card--tittle">
+            <h3>John Doe</h3>
+          </header>
+          <div class="card-content">
+            <span>1 new friend request</span>
+            <img src="" class="card--img">
+            <p>President/CEO at Mighty Schools...</p>
+          </div>
+
+          <button class="card--button">+ Connect</button>
+
+        </div>
+        <div class="servicios--card-item">
+          <header class="card--tittle">
+            <h3>John Doe</h3>
+          </header>
+          <div class="card-content">
+            <span>1 new friend request</span>
+            <img src="" class="card--img">
+            <p>President/CEO at Mighty Schools...</p>
+          </div>
+
+          <button class="card--button">+ Connect</button>
+
+        </div>
+      </div>
+
+    </section>
+    <!--==================== Portafolio ====================-->
+
+    <section class="" id=" ">
+      <div class="">
+
+      </div>
+
+    </section>
+    <!--==================== Contactanos ====================-->
+    <section class="" id=" ">
+      <div class="">
+
+
+      </div>
+
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer>
+      <div class="footer footer--main">
+        <div class="footer__container">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Nosotros</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Servicios</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer footer--article">
+        <div class="footer__container">
+          <span class="footer__text">
+            Copyright ©2024 Munay Wihui
+          </span>
+        </div>
+        <div class="footer__social"></div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>
