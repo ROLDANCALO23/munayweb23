@@ -1,4 +1,5 @@
-@import 'partials/base';    
+@import 'partials/base';   
+@import 'partials/normalize'; 
 @import 'partials/header';    
 @import 'partials/footer';  
 @import 'partials/fonts';    
@@ -7,3 +8,4 @@
 @import 'partials/cursor';   
 @import 'partials/variables';
 @import 'partials/carousel.scss';
+@import 'partials/servicios.scss';

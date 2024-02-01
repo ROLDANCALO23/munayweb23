@@ -1,4 +1,4 @@
-.servicios--cards{
+.caracteristicas--cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,7 +6,7 @@
     max-width: 1200px;
     width: 100%;
     color: $secondary-color;
-    .servicios--card-item{
+    .caracteristicas--card-item{
         background-color: $tertiary-color;
         border-radius: 5px;
         box-shadow: 0 0 10px $secondary-color;

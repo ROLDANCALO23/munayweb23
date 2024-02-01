@@ -38,6 +38,10 @@ footer {
   width: 100%;
 }
 
+h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -203,13 +207,13 @@ footer .footer__copy {
   padding: 30px 15px;
 }
 
-.servicios {
+.caracteristicas {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.servicios .section--title-home {
+.caracteristicas .section--title-home {
   font-size: 2rem;
   text-align: center;
   color: #000;
@@ -236,11 +240,12 @@ footer .footer__copy {
   right: 0;
   position: fixed;
   margin: 180px 30px;
+  z-index: 200;
 }
 
 .aside-social .aside-social_wssp {
   transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 .aside-social .aside-social_wssp a img {
@@ -253,7 +258,7 @@ footer .footer__copy {
   transition: .5s;
 }
 
-.servicios--cards {
+.caracteristicas--cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -263,7 +268,7 @@ footer .footer__copy {
   color: #040926;
 }
 
-.servicios--cards .servicios--card-item {
+.caracteristicas--cards .caracteristicas--card-item {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px #040926;
@@ -272,23 +277,23 @@ footer .footer__copy {
   width: 300px;
 }
 
-.servicios--cards .servicios--card-item .card--tittle {
+.caracteristicas--cards .caracteristicas--card-item .card--tittle {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-.servicios--cards .servicios--card-item h3 {
+.caracteristicas--cards .caracteristicas--card-item h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #000;
 }
 
-.servicios--cards .servicios--card-item p {
+.caracteristicas--cards .caracteristicas--card-item p {
   font-size: 1rem;
   margin-bottom: 15px;
 }
 
-.servicios--cards .servicios--card-item a {
+.caracteristicas--cards .caracteristicas--card-item a {
   background-color: #040926;
   border-radius: 5px;
   color: #fff;
@@ -298,7 +303,7 @@ footer .footer__copy {
   text-decoration: none;
 }
 
-.servicios--cards .servicios--card-item a:hover {
+.caracteristicas--cards .caracteristicas--card-item a:hover {
   background-color: #000;
 }
 
@@ -648,4 +653,50 @@ footer .footer__copy {
   .carousel .list .item .content .title {
     font-size: 30px;
   }
+}
+
+.servicios-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.servicios-container .servicios-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.servicios-container .servicios-list .servicios-item {
+  padding: 15px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.servicios-container .servicios-list .servicios-item:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+.servicios-container .servicios-list .servicios-item .servicios-title {
+  font-size: 1.1rem;
+  margin: 0px;
+}
+
+.servicios-container .servicios-list .servicios-item .servicios-img {
+  width: 75px;
+}
+
+.servicios-container .servicios-list .servicios-item .servicios-description {
+  font-size: .8rem;
+  text-align: center;
+  margin: 5px 0;
 }

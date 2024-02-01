@@ -1,0 +1,43 @@
+.servicios-container{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    .servicios-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        margin-top: 50px;
+        .servicios-item{
+            padding: 15px;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 15px;
+            &:hover{
+                transform: scale(1.2);
+                transition: .5s;
+            }
+            .servicios-title{
+                font-size: 1.1rem;
+                margin: 0px;
+            }
+            .servicios-img{
+                width: 75px;
+
+            }
+            .servicios-description{
+                font-size: .8rem;
+                text-align: center;
+                margin: 5px 0;
+            }
+        }
+    
+    }
+}
+
+

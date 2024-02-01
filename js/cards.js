@@ -1,31 +1,15 @@
-//selectors
-const cards = document.querySelectorAll('.servicios--card-item');
 
+gsap.registerPlugin(ScrollTrigger);
 
-const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) {
-        moveCards();
-    }
-});
-
-document.addEventListener('DOMContentLoaded',() => {
-//call intersection observer for cards
-
-    observer.observe(document.querySelector('.servicios--card-item'));
-});
-
-
-
-function moveCards() {
-    let timeLine = gsap.timeline();
-    cards.forEach(card => {
-        timeLine.from(card, {
+    //let timeLine = gsap.timeline();
+        gsap.from('.caracteristicas--card-item', {
+            stagger:0.5,
             y: 100,
             opacity: 0,
-            duration: 0.6,
-            delay:0.1
+            duration: 1.5,
+            delay:0.5,
+            scrollTrigger: {
+                trigger: '.caracteristicas--card-item'
+            }
         })
-    })
-    observer.unobserve(document.querySelector('.servicios--card-item'));
 
-}
