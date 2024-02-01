@@ -57,3 +57,36 @@
     }
 }
 
+.us--section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    max-width: 1200px;
+    width: 100%;
+    .us-container{
+        width: 100%;
+        .us-content{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            .us-text{
+    
+                max-width: 600px;
+                text-align: justify;
+                margin: 30px 0;
+                font-size: 1.4rem;
+                color: $secondary-color;
+            }
+            .us-img{
+                width: 300px;
+            }
+    
+        }
+    }
+
+
+}
