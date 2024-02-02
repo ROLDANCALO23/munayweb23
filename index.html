@@ -23,6 +23,15 @@
 </head>
 
 <body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
   <!--==================== HEADER ====================-->
   <header class="header" id='header'>
     <div class="nav--elements">
@@ -194,8 +203,8 @@
 
         <div class="arrows">
           <button id="prev">
-          </button>
-          <button id="next">></button>
+            < </button>
+              <button id="next">></button>
         </div>
         <!-- time running -->
         <div class="time"></div>
@@ -205,6 +214,399 @@
     </section>
 
 
+    <!-- 
+        - #SERVICE
+      -->
+
+    <section class="service text-center" aria-label="my services" id="service">
+      <div class="container">
+
+        <ul class="service-list">
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./img/service-icon-1.svg" width="80" height="80" loading="lazy" alt="service icon">
+              </div>
+
+              <h3 class="card-title">
+                <a href="#">
+                  Web <br>
+                  Development
+                </a>
+              </h3>
+
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./img/service-icon-2.svg" width="80" height="80" loading="lazy" alt="service icon">
+              </div>
+
+              <h3 class="card-title">
+                <a href="#">
+                  Digital <br>
+                  Marketing
+                </a>
+              </h3>
+
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./img/service-icon-3.svg" width="80" height="80" loading="lazy" alt="service icon">
+              </div>
+
+              <h3 class="card-title">
+                <a href="#">
+                  Graphics <br>
+                  Design
+                </a>
+              </h3>
+
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./img/service-icon-4.svg" width="80" height="80" loading="lazy" alt="service icon">
+              </div>
+
+              <h3 class="card-title">
+                <a href="#">
+                  Mobile <br>
+                  Application
+                </a>
+              </h3>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- 
+        - #ABOUT
+      -->
+
+    <section class="section about" aria-label="about-me" id="about">
+      <div class="container">
+
+        <div class="tab-container">
+
+          <ul class="tab-btn-list">
+
+            <li class="tab-btn-item">
+              <button class="tab-btn title h6 active" data-tab-btn="about">About Me</button>
+            </li>
+
+            <li class="tab-btn-item">
+              <button class="tab-btn title h6" data-tab-btn="skillset">Skillset</button>
+            </li>
+
+            <li class="tab-btn-item">
+              <button class="tab-btn title h6" data-tab-btn="interview">Interview</button>
+            </li>
+
+            <li class="tab-btn-item">
+              <button class="tab-btn title h6" data-tab-btn="awward">Awwards</button>
+            </li>
+
+            <li class="tab-btn-item">
+              <button class="tab-btn title h6" data-tab-btn="exhibition">Exhibition</button>
+            </li>
+
+          </ul>
+
+          <div class="tab-content active" data-tab-content="about">
+            <div class="grid-list">
+
+              <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                <img src="./img/about-banner.jpg" width="570" height="420" loading="lazy" alt="about banner"
+                  class="img-cover">
+              </figure>
+
+              <div class="about-content">
+
+                <h2 class="h4 title section-title">
+                  A very small stage in a vast cosmic.
+                </h2>
+
+                <p class="section-text">
+                  A very small stage in a vast cosmic arena great turbuslent clouds encyclo-paedia galactica star
+                  stuff harvesting star light the carbon in our apple pies realm of the galaxies
+                </p>
+
+                <ul class="about-list">
+
+                  <li class="about-item">
+                    <p class="list-title">Name</p>
+
+                    <span class="span title h5">Drew Hays</span>
+                  </li>
+
+                  <li class="about-item">
+                    <p class="list-title">Phone Number</p>
+
+                    <span class="span title h5">123. 456. 789. 01</span>
+                  </li>
+
+                  <li class="about-item">
+                    <p class="list-title">Email Address</p>
+
+                    <span class="span title h5">info@drew.com</span>
+                  </li>
+
+                  <li class="about-item">
+                    <p class="list-title">Social Network</p>
+
+                    <div class="social-list">
+
+                      <a href="#" class="social-link h6" title="Facebook">Fb.</a>
+                      <a href="#" class="social-link h6" title="Behance">Be.</a>
+                      <a href="#" class="social-link h6" title="Linkedin">Ln.</a>
+                      <a href="#" class="social-link h6" title="Dribbble">Dr.</a>
+
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-content" data-tab-content="skillset">
+            <div class="grid-list">
+
+              <div class="skill-content">
+
+                <h3 class="h4 title section-title">
+                  We help to create visual strategies.
+                </h3>
+
+                <p class="section-text">
+                  A very small stage in a vast cosmic arena great turbuslent clouds encyclo-paedia galactica star
+                  stuff harvesting star light
+                </p>
+
+                <ul class="skill-list">
+
+                  <li>
+                    <div class="skill-wrapper">
+                      <span class="span">Website Development</span>
+
+                      <span class="value">95%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="skill-wrapper">
+                      <span class="span">Design UI & UX</span>
+
+                      <span class="value">85%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                      <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                <img src="./img/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                  class="img-cover">
+              </figure>
+
+            </div>
+          </div>
+
+          <div class="tab-content" data-tab-content="interview">
+            <div class="grid-list">
+
+              <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                <img src="./img/interview-1.jpg" width="376" height="420" loading="lazy" alt="interview 1"
+                  class="img-cover">
+
+                <button class="btn btn:hover">Play</button>
+              </div>
+
+              <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                <img src="./img/interview-2.jpg" width="376" height="420" loading="lazy" alt="interview 2"
+                  class="img-cover">
+
+                <button class="btn btn:hover">Play</button>
+              </div>
+
+              <div class="interview-card img-holder" style="--width: 376; --height: 420;" data-tilt>
+                <img src="./img/interview-3.jpg" width="376" height="420" loading="lazy" alt="interview 3"
+                  class="img-cover">
+
+                <button class="btn btn:hover">Play</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-content" data-tab-content="awward">
+
+            <h3 class="h4 title section-title">
+              We’re a team of creatives who are excited about unique ideas and help IT-tech companies to make identity
+              by crafting UI/UX.
+            </h3>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="award-card">
+                  <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                    <img src="./img/awward-1.jpg" width="534" height="383" loading="lazy" alt="certificate"
+                      class="img-cover">
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="award-card">
+                  <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                    <img src="./img/awward-2.jpg" width="534" height="383" loading="lazy" alt="certificate"
+                      class="img-cover">
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="award-card">
+                  <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                    <img src="./img/awward-3.jpg" width="534" height="383" loading="lazy" alt="certificate"
+                      class="img-cover">
+                  </figure>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="tab-content" data-tab-content="exhibition">
+            <ul class="grid-list">
+
+              <li>
+                <div class="exhibition-card">
+
+                  <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                    <img src="./img/exhibition-1.jpg" width="376" height="200" loading="lazy" alt="image"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-icon">
+                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="exhibition-card">
+
+                  <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                    <img src="./img/exhibition-2.jpg" width="376" height="200" loading="lazy" alt="video"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-icon">
+                    <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="exhibition-card">
+
+                  <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                    <img src="./img/exhibition-3.jpg" width="376" height="200" loading="lazy" alt="music"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-icon">
+                    <ion-icon name="logo-soundcloud" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="exhibition-card">
+
+                  <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                    <img src="./img/exhibition-4.jpg" width="376" height="200" loading="lazy" alt="image"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-icon">
+                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="exhibition-card">
+
+                  <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                    <img src="./img/exhibition-5.jpg" width="376" height="200" loading="lazy" alt="image"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-icon">
+                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="exhibition-card">
+
+                  <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                    <img src="./img/exhibition-6.jpg" width="376" height="200" loading="lazy" alt="image"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-icon">
+                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
     <!--==================== HOME ====================
     <section class=" section__container header__container" id="home">
       <div class="home__content">
@@ -247,8 +649,10 @@
         <div class="us-content">
           <img src="img/Hero.png" alt="" class="us-img">
           <p class="us-text">
-            <strong>Munay Web developers</strong> es un grupo de profesionales especialistas en el <strong>desarrollo web</strong>
-            ofreciendo un servicio de calidad y a la medida de tus necesidades. Nuestro objetivo es ayudarte a alcanzar tus metas y objetivos
+            <strong>Munay Web developers</strong> es un grupo de profesionales especialistas en el <strong>desarrollo
+              web</strong>
+            ofreciendo un servicio de calidad y a la medida de tus necesidades. Nuestro objetivo es ayudarte a alcanzar
+            tus metas y objetivos
             comerciales creando el <strong> sitio web</strong> que tu empresa necesita
 
           </p>
@@ -380,6 +784,13 @@
         <div class="footer__social"></div>
       </div>
     </footer>
+    <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
 
     <script src="js/script.js"></script>
 
