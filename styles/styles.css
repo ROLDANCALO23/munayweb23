@@ -736,23 +736,24 @@ footer .footer__copy {
 }
 
 :root {
-  --border-eerie-black:rgb(23, 131, 177);
+  --border-eerie-black:rgb(13, 61, 61);
   --transition-1: 0.25s ease;
-  --text-white: rgb(23, 131, 177);
+  --text-white: rgb(0, 0, 1);
   --fontSize-5: 5rem;
   --weight-regular: 400;
   --bg-eerie-black:rgb(200, 208, 219);
   --fontFamily-recoleta: 'Recoleta';
   --bg-smoky-black: hsla(0, 0%, 6%, 1);
   --weight-medium: 500;
-  --bg-white:hsla(0, 0%, 100%, 1);
+  --bg-white:rgb(179, 223, 224);
   --radius-pill: 500px;
 --radius-circle: 50%;
 --text-smoky-black: hsla(0, 0%, 6%, 1);
 --fontSize-6: 1.8rem;
 
 }
-
+a,
+img{ display: block; }
 a {
   color: inherit;
   text-decoration: none;
@@ -763,13 +764,13 @@ a {
 \*-----------------------------------*/
 
 .service {
-  border-block-start: 1px solid var(--border-eerie-black);
+  border-block-start: 1px solid rgb(118, 180, 181);
   margin-block-start: -15px;
 }
 
 .service .container { padding-inline: 0; }
 
-.service-item { border-block-end: 16px solid var(--border-eerie-black); }
+.service-item { border-block-end: 16px solid rgb(118, 180, 181); }
 
 .service-card {
   position: relative;
@@ -818,7 +819,7 @@ a {
    .service-item { width: 50%; }
  
    .service-item:nth-child(2n) {
-     border-inline-start: 1px solid var(--border-eerie-black);
+     border-inline-start: 1px solid rgb(118, 180, 181);
    }
  
    .service-card .card-title { font-size: 2.4rem; }
@@ -831,14 +832,14 @@ li { list-style: none; }
    .service-item { width: 25%; }
 
    .service-item:not(:last-child) {
-     border-inline-end: 1px solid var(--border-eerie-black);
+     border-inline-end: 1px solid rgb(118, 180, 181);
    }
 
   /**
    * SERVICE
    */
 
-   .service { border-block-end: 1px solid var(--border-eerie-black); }
+   .service { border-block-end: 1px solid rgb(118, 180, 181); }
 
    .service-list {
      gap: 158px;
@@ -846,7 +847,7 @@ li { list-style: none; }
    }
  
    .service .service-item {
-     border-inline: 1px solid var(--border-eerie-black);
+     border-inline: 1px solid rgb(118, 180, 181);
      border-block-end: none;
    } 
 
