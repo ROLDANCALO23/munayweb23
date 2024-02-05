@@ -19,18 +19,12 @@
   <script src="js/texto.js" defer></script>
   <script src="js/cards.js" defer></script>
   <script src="js/servicios.js" defer></script>
+  <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+
   <title>MUNAY Desarrollo Webs</title>
 </head>
 
 <body>
-
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <div class="preloader" data-preloader>
-    <span class="line"></span>
-  </div>
 
   <!--==================== HEADER ====================-->
   <header class="header" id='header'>
@@ -73,228 +67,144 @@
   </header>
   <!--==================== MAIN ====================-->
   <main>
-    <section class="hero-carousel">
-      <!-- carousel -->
-      <div class="carousel">
-        <!-- list item -->
-        <div class="list">
-          <div class="item">
-            <img src="img/img1.jpg">
-            <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">WEB</div>
-              <div class="des">
-                <!-- lorem 50 -->
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/img2.jpg">
-            <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">WEB</div>
-              <div class="des">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/img3.jpg">
-            <div class="content">
-              <div class="author">LUNDEV</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">WEB</div>
-              <div class="des">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/img4.jpg">
-            <div class="content">
-              <div class="author">DISEÑO WEB</div>
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">WEB</div>
-              <div class="des">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat,
-                itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-                doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut,
-                exercitationem eum aperiam illo illum laudantium?
-              </div>
-              <div class="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- list thumnail -->
-        <div class="thumbnail">
-          <div class="item">
-            <img src="img/img1.jpg">
-            <div class="content">
-              <div class="title">
-                Name Slider
-              </div>
-              <div class="description">
-                Description
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/img2.jpg">
-            <div class="content">
-              <div class="title">
-                Name Slider
-              </div>
-              <div class="description">
-                Description
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/img3.jpg">
-            <div class="content">
-              <div class="title">
-                Name Slider
-              </div>
-              <div class="description">
-                Description
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/img4.jpg">
-            <div class="content">
-              <div class="title">
-                Name Slider
-              </div>
-              <div class="description">
-                Description
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- next prev -->
+    <div class="slideshow-container">
 
-        <div class="arrows">
-          <button id="prev">
-          </button>
-          <button id="next">></button>
+      <div class="mySlides fade">
+        <div class="numbertext">
+          <h1>Diseñamos tu </h1>
+          <span class="auto-type spantext"></span>
         </div>
-        <!-- time running -->
-        <div class="time"></div>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: ["asdas", "sss", "333dd"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+          })
+        </script>
+
+        <img src="img/img1.jpg" style="width:100%">
+        <div class="contact-form">
+          <h3>Contactanos</h3>
+          <form action="input-group">
+            <div class="input-box">
+              <input type="text" placeholder="Nombre y apellido" required>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="email" required placeholder="Correo electrónico">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Asunto">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="input-box">
+              <textarea placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+        <div class="text">dsfsdfsdfsdfsdfsd Text</div>
       </div>
 
+      <div class="mySlides fade">
+        <div class="numbertext">
+          <h1>Diseñamos tu </h1>
+          <span class="auto-type1 spantext"></span>
+        </div>
 
-    </section>
-
-
-    <!-- 
-        - #SERVICE
-      -->
-
-    <section class="service text-center" aria-label="my services" id="service">
-      <div class="container">
-
-        <ul class="service-list">
-
-          <li class="service-item">
-            <div class="service-card">
-
-              <div class="card-icon">
-                <img src="./img/service-icon-1.svg" width="80" height="80" loading="lazy" alt="service icon">
-              </div>
-
-              <h3 class="card-title">
-                <a href="#">
-                  Web <br>
-                  Development
-                </a>
-              </h3>
-
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type1", {
+            strings: ["asdas", "sss", "333dd"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+          })
+        </script>
+        <div class="contact-form">
+          <h3>Contactanos</h3>
+          <form action="input-group">
+            <div class="input-box">
+              <input type="text" placeholder="Nombre y apellido" required>
+              <i class="fa-solid fa-user"></i>
             </div>
-          </li>
-
-          <li class="service-item">
-            <div class="service-card">
-
-              <div class="card-icon">
-                <img src="./img/service-icon-2.svg" width="80" height="80" loading="lazy" alt="service icon">
-              </div>
-
-              <h3 class="card-title">
-                <a href="#">
-                  Digital <br>
-                  Marketing
-                </a>
-              </h3>
-
+            <div class="input-box">
+              <input type="email" required placeholder="Correo electrónico">
+              <i class="fa-solid fa-envelope"></i>
             </div>
-          </li>
-
-          <li class="service-item">
-            <div class="service-card">
-
-              <div class="card-icon">
-                <img src="./img/service-icon-3.svg" width="80" height="80" loading="lazy" alt="service icon">
-              </div>
-
-              <h3 class="card-title">
-                <a href="#">
-                  Graphics <br>
-                  Design
-                </a>
-              </h3>
-
+            <div class="input-box">
+              <input type="text" placeholder="Asunto">
+              <i class="fa-solid fa-pen-to-square"></i>
             </div>
-          </li>
-
-          <li class="service-item">
-            <div class="service-card">
-
-              <div class="card-icon">
-                <img src="./img/service-icon-4.svg" width="80" height="80" loading="lazy" alt="service icon">
-              </div>
-
-              <h3 class="card-title">
-                <a href="#">
-                  Mobile <br>
-                  Application
-                </a>
-              </h3>
-
+            <div class="input-box">
+              <textarea placeholder="Escribe tu mensaje..."></textarea>
             </div>
-          </li>
-
-        </ul>
-
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+        <img src="img/img2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
       </div>
-    </section>
+
+      <div class="mySlides fade">
+        <div class="numbertext">
+          <h1>Diseñamos tu </h1>
+          <span class="auto-type2 spantext"></span>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type2", {
+            strings: ["asdas", "sss", "333dd"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+          })
+        </script>
+        <div class="contact-form">
+          <h3>Contactanos</h3>
+          <form action="input-group">
+            <div class="input-box">
+              <input type="text" placeholder="Nombre y apellido" required>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="email" required placeholder="Correo electrónico">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Asunto">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="input-box">
+              <textarea placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+        <img src="img/img3.jpg  " style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+
 
     <!-- 
         - #ABOUT
@@ -784,13 +694,6 @@
         <div class="footer__social"></div>
       </div>
     </footer>
-    <!-- 
-    - #CUSTOM CURSOR
-  -->
-
-    <div class="cursor-dot" data-cursor></div>
-    <div class="cursor-outline" data-cursor></div>
-
 
     <script src="js/script.js"></script>
 
