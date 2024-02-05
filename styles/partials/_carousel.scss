@@ -142,7 +142,7 @@ img {
 max-width: 100%;
 position: relative;
 margin: auto;
-background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/bg.jpg);
+//background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/bg.jpg);
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -265,7 +265,7 @@ form {
   height: 40px;
   padding: 0 10px;
   outline:none;
-  background: rgba(255 255 255 / .1);
+  //background: rgba(255 , 255 , 255 / .1);
   border:3px solid transparent;
   letter-spacing: 1px;
   transition:.3s;
@@ -294,7 +294,7 @@ form {
   width: 100%;
   height: 130px;
   padding: 10px;
-  background: rgba(255 255 255 / .1);
+  //background: rgba(255, 255, 255 / .1);
   border:3px solid transparent;
   letter-spacing: 1px;
   outline: none;
