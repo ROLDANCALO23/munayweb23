@@ -114,11 +114,58 @@
 
 }
 
-.contacto-img{
-    width: 100%;
-    max-width: 40%;
 
-    img{
-        width: 150px;
+.contactos{
+    width: 100%;
+    .contacto-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        width: 60%;
+
+        .contacto-img{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+    
+            img{
+                width: 420px;
+            }
+        }
+    
     }
+    .contacto-container-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        width: 40%;
+        .contacto-item{
+            font-size: 1.2rem;
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid $quaternary-color;
+            border-radius: 15px;
+            width: 100%;
+            i{
+                &::before{
+                    margin-right: 15px;
+                }
+            }
+        }
+        h1{
+            font-size: 3rem;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+    }
+
+
 }

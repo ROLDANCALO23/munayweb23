@@ -25,7 +25,7 @@ section {
   position: relative;
   align-content: center;
   z-index: 10;
-  max-width: 1380px;
+  max-width: 1260px;
   margin: 30px 0;
 }
 
@@ -322,13 +322,58 @@ footer .footer__copy {
   }
 }
 
-.contacto-img {
+.contactos {
   width: 100%;
-  max-width: 40%;
 }
 
-.contacto-img img {
-  width: 150px;
+.contactos .contacto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  width: 60%;
+}
+
+.contactos .contacto-container .contacto-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.contactos .contacto-container .contacto-img img {
+  width: 420px;
+}
+
+.contactos .contacto-container-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  width: 40%;
+}
+
+.contactos .contacto-container-info .contacto-item {
+  font-size: 1.2rem;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.contactos .contacto-container-info .contacto-item i::before {
+  margin-right: 15px;
+}
+
+.contactos .contacto-container-info h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .caracteristicas--cards {
