@@ -324,16 +324,17 @@ footer .footer__copy {
 
 .contactos {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .contactos .contacto-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   padding: 15px;
-  width: 60%;
+  width: 50%;
 }
 
 .contactos .contacto-container .contacto-img {
@@ -345,6 +346,12 @@ footer .footer__copy {
 
 .contactos .contacto-container .contacto-img img {
   width: 420px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactos .contacto-container .contacto-img img {
+    width: 300px;
+  }
 }
 
 .contactos .contacto-container-info {
@@ -368,6 +375,10 @@ footer .footer__copy {
 
 .contactos .contacto-container-info .contacto-item i::before {
   margin-right: 15px;
+}
+
+.contactos .contacto-container-info .contacto-item a {
+  text-decoration: none;
 }
 
 .contactos .contacto-container-info h1 {
@@ -396,12 +407,14 @@ footer .footer__copy {
 }
 
 .caracteristicas--cards .caracteristicas--card-item .card--tittle {
+  display: flex;
+  justify-content: center;
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
 .caracteristicas--cards .caracteristicas--card-item h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 15px;
   color: #000;
 }
@@ -423,6 +436,29 @@ footer .footer__copy {
 
 .caracteristicas--cards .caracteristicas--card-item a:hover {
   background-color: #000;
+}
+
+.caracteristicas--cards .caracteristicas--card-item .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caracteristicas--cards .caracteristicas--card-item .card-content .card--img-container {
+  display: flex;
+  height: 200px;
+}
+
+.caracteristicas--cards .caracteristicas--card-item .card-content .card--img-container img {
+  width: 240px;
+  margin-bottom: 15px;
+  align-self: center;
+}
+
+.caracteristicas--cards .caracteristicas--card-item .card-content span {
+  font-size: 1.5rem;
+  color: #000;
 }
 
 .crossCursor {

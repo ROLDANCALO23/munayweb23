@@ -117,14 +117,15 @@
 
 .contactos{
     width: 100%;
+    flex-wrap: wrap;
     .contacto-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column;
         padding: 15px;
-        width: 60%;
+        width: 50%;
 
         .contacto-img{
             width: 100%;
@@ -134,6 +135,10 @@
     
             img{
                 width: 420px;
+                //media query
+                @media screen and (max-width: $breakpoint-md){
+                    width: 300px;
+                }
             }
         }
     
@@ -157,6 +162,9 @@
                 &::before{
                     margin-right: 15px;
                 }
+            }
+            a{
+                text-decoration: none;
             }
         }
         h1{
