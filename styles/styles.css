@@ -585,16 +585,17 @@ footer .footer__copy {
 .contact-form form {
   margin: 0;
   padding: 1em;
+  padding: 1em;
 }
 
 .contact-form {
-  position: absolute;
+  position: absolute; 
   top: 17%;
-  left: 60%;
+  left: 55%;
   padding: 50px 55px;
   border-radius: 20px;
   text-align: center;
-  width: 20%;
+  width: 30%;
   box-shadow: 0 0 50px rgba(1, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   border-radius: 20px;
@@ -643,6 +644,7 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   grid-template-columns: repeat(2, 50%);
+
 }
 
 /* Next & previous buttons */
@@ -1019,6 +1021,190 @@ form > button:hover,
   margin: 5px 0;
 }
 
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+.h6 {
+  font-size: var(--fontSize-6);
+}
+
+.title {
+  color: var(--text-white);
+  font-family: var(--fontFamily-recoleta);
+  font-weight: var(--weight-regular);
+}
+
+.tab-container {
+  border: 1px solid var(--border-eerie-black);
+}
+
+.tab-btn {
+  width: 100%;
+  padding-block: 16px;
+  border-block-end: 1px solid var(--border-eerie-black);
+  transition: var(--transition-1);
+}
+
+.tab-btn:is(:hover, :focus-visible, .active) {
+  background: var(--bg-eerie-black);
+}
+
+.tab-content {
+  display: none;
+  padding: 30px;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fade 500ms linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tab-content .grid-list {
+  display: grid;
+  gap: 30px;
+}
+
+.tab-content .section-title {
+  margin-block-end: 30px;
+}
+
+.tab-content .section-text,
+.about-item:not(:last-child) {
+  margin-block-end: 20px;
+}
+
+.about-item .span {
+  line-height: 1.4;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-link {
+  color: var(--text-white);
+}
+
+.skill-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 30px 12px;
+}
+
+.skill-wrapper .span {
+  font-family: var(--fontFamily-recoleta);
+  font-weight: var(--weight-medium);
+}
+
+.progress-bar {
+  background-color: var(--bg-smoky-black);
+  height: 4px;
+}
+
+.progress-fill {
+  background-color: var(--bg-white);
+  height: 100%;
+}
+
+.interview-card {
+  position: relative;
+}
+
+.interview-card .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  border-radius: var(--radius-circle);
+  color: var(--text-smoky-black);
+}
+
+.interview-card .btn::before,
+.interview-card .btn::after {
+  border-radius: inherit;
+}
+
+.interview-card .btn::before {
+  background-color: var(--bg-white);
+}
+
+.interview-card .btn:is(:hover, :focus-visible) {
+  color: var(--text-white);
+}
+
+.servicios-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.servicios-container .servicios-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+
+.servicios-container .servicios-list .servicios-item {
+  padding: 15px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.servicios-container .servicios-list .servicios-item:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+.servicios-container .servicios-list .servicios-item .servicios-title {
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+.servicios-container .servicios-list .servicios-item .servicios-img {
+  width: 90px;
+}
+
+.servicios-container .servicios-list .servicios-item .servicios-description {
+  font-size: .8rem;
+  text-align: center;
+  margin: 5px 0;
+}
+
 /*contactanos*/
 .container{
   max-width: 400px;
@@ -1048,8 +1234,8 @@ input,textarea{
   border: 2px solid #457388;
   padding: 10px;
   border-radius: 5px;
-  background-color: #5f8394 ;
-  width: 90%;
+  background-color: #32a6db ;
+  width: 95%;
   color: #000 ;
 }
 
@@ -1084,5 +1270,6 @@ input,textarea{
   100%{
     transform: translateY(0);
   }
+
 }
 
