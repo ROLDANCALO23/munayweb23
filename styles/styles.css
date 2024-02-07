@@ -589,13 +589,14 @@ footer .footer__copy {
 
 .contact-form {
   position: absolute;
-  top: 14em;
-  left: 79em;
+  top: 17%;
+  left: 60%;
   padding: 50px 55px;
   border-radius: 20px;
   text-align: center;
-  width: 540px;
+  width: 20%;
   box-shadow: 0 0 50px rgba(1, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
   border-radius: 20px;
 }
 
@@ -1017,3 +1018,71 @@ form > button:hover,
   text-align: center;
   margin: 5px 0;
 }
+
+/*contactanos*/
+.container{
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 0 0 10px rgba(0,0,0,0.358);
+  backdrop-filter: blur(20px);
+  background: rgba(250,250,250,0.207);
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,textarea{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #98b1989f;
+  border-radius: 5px;
+  background-color: rgba(250,250,250,0);
+
+}
+
+#response{
+  margin-top: 10px;
+  border: 2px solid #457388;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5f8394 ;
+  width: 90%;
+  color: #000 ;
+}
+
+#response strong{
+  margin-bottom: 5px;
+}
+
+@keyframes pulse{
+  0%{
+    transform:scale(1);
+  }
+  50%{
+    transform:scale(1.05);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+.contact-form {
+  animation: imgg 2s ease-in-out infinite;
+  animation-delay:2s ;
+}
+
+@keyframes imgg{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-22px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+

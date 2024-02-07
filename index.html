@@ -86,26 +86,29 @@
         <img src="img/img1.jpg" style="width:100%">
         <div class="contact-form">
           <h3>Contactanos</h3>
-          <form action="input-group">
+          <form action="input-group" id="contactForm" onsubmit="submitForm(event)">
             <div class="input-box">
-              <input type="text" placeholder="Nombre y apellido" required>
+              <input type="text" placeholder="Nombre y apellido" id="name" required>
               <i class="fa-solid fa-user"></i>
             </div>
             <div class="input-box">
-              <input type="email" required placeholder="Correo electrónico">
+              <input type="email" required placeholder="Correo electrónico" id='email'>
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Asunto">
-              <i class="fa-solid fa-pen-to-square"></i>
+              <input type="telefono" required placeholder="Numero de telefono" id='telefono'>
+              <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="input-box">
-              <textarea placeholder="Escribe tu mensaje..."></textarea>
+              <input type="text" placeholder="Asunto" id='message'>
+              <i class="fa-solid fa-pen-to-square"></i>
             </div>
+
             <button type="submit">Enviar mensaje</button>
           </form>
+          <div id='response'></div>
+
         </div>
-        <div class="text">dsfsdfsdfsdfsdfsd Text</div>
       </div>
 
       <div class="mySlides fade">
@@ -145,7 +148,6 @@
           </form>
         </div>
         <img src="img/img2.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
       </div>
 
       <div class="mySlides fade">
@@ -184,7 +186,6 @@
           </form>
         </div>
         <img src="img/img3.jpg  " style="width:100%">
-        <div class="text">Caption Three</div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -249,9 +250,8 @@
     </section>
 
 
-    <!-- 
-        - #ABOUT
-      -->
+
+    <!--  #ABOUT      
 
     <section class="section about" aria-label="about-me" id="about">
       <div class="container">
@@ -559,6 +559,43 @@
         </div>
 
       </div>
+    </section> -->
+    <!--==================== HOME ====================
+    <section class=" section__container header__container" id="home">
+      <div class="home__content">
+        <h1>Agencia Digital</h1>
+        <div class='console-underscore' id='console'> &#95;</div>
+
+        <p class='pr'>
+          Enfocada en el logro de resultados comerciales y
+          de marketing con altas dosis de creatividad y estrategia.
+        </p>
+        <button class="cn"><a href="#">Contactanos</a></button>
+        <div class="form">
+          <h2>Dejanos tus datos</h2>
+          <input type="email" name='email' placeholder="Tu numero de wtsp o llamadas">
+          <input type="email" name='email' placeholder="Tu email activo">
+
+          <button class="btnn"><a href="#">ENVIAR</a></button>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+-->
+
+    <!--==================== Aside Social ====================-->
+
+    <section class="aside-social" id=" ">
+      <div class="aside-social_wssp">
+        <a href="https://api.whatsapp.com/send?phone=51982018927&text=Hola%20quiero%20mas%20informacion%20de%20sus%20servicios"
+          target="_blank">
+          <img src="img/wssp.png" class="wssp-img" id="wspp-img" alt="">
+        </a>
+      </div>
+
+    </section>
     </section>
 
     <!--==================== Nosotros ====================-->
@@ -590,7 +627,7 @@
           <div class="card-content">
             <div class="card--img-container">
               <img src="img/card1.jpg" class="card--img">
-            </div>      
+            </div>
             <span>Crea tu web personalizada</span>
             <p>President/CEO at Mighty Schools...</p>
           </div>
@@ -643,25 +680,25 @@
         </div>
 
         <div class="contacto-number contacto-item">
-            <i class="fas fa-phone-alt"></i>
-            <span>982018927</span>
+          <i class="fas fa-phone-alt"></i>
+          <span>982018927</span>
         </div>
         <div class="contacto-facebook contacto-item">
-            <i class="fab fa-facebook-f"></i>
-            <a href="">Munay Web Developers</a>
+          <i class="fab fa-facebook-f"></i>
+          <a href="">Munay Web Developers</a>
         </div>
         <div class="contacto-instagram contacto-item">
-            <i class="fab fa-instagram"></i>
-            <a href="">@munaywebdevelopers</a>
+          <i class="fab fa-instagram"></i>
+          <a href="">@munaywebdevelopers</a>
         </div>
         <div class="contacto-email contacto-item">
-            <i class="fas fa-envelope">munaydevelopers@gmail.com</i>
-            <span>
+          <i class="fas fa-envelope">munaydevelopers@gmail.com</i>
+          <span>
         </div>
 
       </div>
       <div class="contacto-container">
-        
+
         <div class="contacto-img">
           <img src="img/web-dev.jpg" alt="">
         </div>
