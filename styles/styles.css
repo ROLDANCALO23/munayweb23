@@ -102,7 +102,7 @@ h2, h3, h4, h5, h6, p {
   height: 30px;
 }
 
-.header .nav--menu {
+.header .nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -116,16 +116,16 @@ h2, h3, h4, h5, h6, p {
   z-index: 30;
 }
 
-.header .nav--menu .nav--list {
+.header .nav .nav--list {
   display: flex;
   justify-content: flex-end;
   padding: 0px;
 }
 
 @media screen and (max-width: 768px) {
-  .header .nav--menu .nav--list {
+  .header .nav .nav--list {
     position: fixed;
-    top: -20%;
+    top: -150px;
     right: 0px;
     left: 0px;
     margin: 0px;
@@ -138,29 +138,29 @@ h2, h3, h4, h5, h6, p {
   }
 }
 
-.header .nav--menu .nav--list .nav-item {
+.header .nav .nav--list .nav-item {
   list-style: none;
   padding: 15px;
   cursor: pointer;
 }
 
-.header .nav--menu .nav--list .nav-item:hover {
+.header .nav .nav--list .nav-item:hover {
   color: #040926;
 }
 
-.header .nav--menu .nav--list .nav-item a {
+.header .nav .nav--list .nav-item a {
   font-weight: 700;
   text-decoration: none;
   color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-  .header .nav--menu .nav--list .nav-item a {
+  .header .nav .nav--list .nav-item a {
     color: #e6e9f2;
   }
 }
 
-.header .nav--menu .toggle {
+.header .nav .toggle {
   top: 90px;
 }
 
