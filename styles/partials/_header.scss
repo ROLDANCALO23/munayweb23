@@ -46,7 +46,7 @@
         }
     }
 
-    .nav--menu{
+    .nav{
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -65,7 +65,7 @@
             padding: 0px;
              @media screen and (max-width: $breakpoint-md){
                 position: fixed;
-                top: -20%;
+                top: -150px;
                 right: 0px;
                 left: 0px;
                 margin:0px;
