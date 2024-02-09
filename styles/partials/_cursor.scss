@@ -1,33 +1,31 @@
 @import 'variables';
 
-.crossCursor{
-    cursor: url('img/crosshair.png'), auto !important;
-    z-index: 2;
-}
-.cursor {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%,-50%);
-    background: white;
-    z-index: 99;
-    pointer-events: none;
-}
-
-.cursor-follow {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%,-50%);
-    background: transparent;
-    border: 1px solid white;
-    z-index: 99;
-    pointer-events: none;
-
+.portfolio{
+    text-align: center;
+    width: 100%;
+    .container1{
+        width: 100%;
+        .main-text{
+            color: red;
+        }
+        span{
+            color: #000;
+        }
+        .filter-buttons{
+            margin: 2rem;
+            text-align: center;
+        }
+        .filter-buttons .btn{
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: .85rem;
+            font-weight: 600;
+            letter-spacing: .4px;
+            margin-left: 1.3rem;
+            color: red;
+        }
+    }
+    
 }
