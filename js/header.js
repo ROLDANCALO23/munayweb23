@@ -10,6 +10,8 @@ document.addEventListener('scroll', scrollNav);
 
 
 
+
+
 function toggleNav() {
     nav.classList.toggle('toggle');
 }
@@ -17,13 +19,13 @@ function toggleNav() {
 function scrollNav(){
     let scrollY=document.documentElement.scrollTop;
     console.log(ancho)
-    if(ancho >= 768){
+
         if(scrollY >= 50){
 
             gsap.to(".header" , {
                 "background-color": "rgb(4 9 38)",
                 "box-shadow": "0px 0px 10px 0px rgba(255,255,255,0.75)",
-                scale: 1.01,
+                scale: 1,
                 duration:0.6
             })
             gsap.to(".nav--link" , {           
@@ -46,7 +48,9 @@ function scrollNav(){
                 duration:1
             })
 
-        }
+        
     }
+    //remove gsap animation when viewport is less than 768px
+ 
 
 }
