@@ -10,11 +10,11 @@ document.addEventListener('scroll', scrollNav);
 
 
 
-
-
 function toggleNav() {
     nav.classList.toggle('toggle');
 }
+
+
 
 function scrollNav(){
     let scrollY=document.documentElement.scrollTop;
@@ -50,7 +50,4 @@ function scrollNav(){
 
         
     }
-    //remove gsap animation when viewport is less than 768px
- 
-
 }
